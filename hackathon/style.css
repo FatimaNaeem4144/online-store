@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/front\ page.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Fuggles', cursive;
+}
+*::selection{
+  color: #f09;
+  background-color: #fff;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    animation: glow 0.50s ease-in-out infinite alternate-reverse;
+}
+@keyframes glow{
+    0% {
+        text-shadow: 0 0 5px #f09, 0 0 10px #f09, 0 0 15px #f09, 0 0 20px #f09;
+    }
+    50% {
+        text-shadow: 0 0 10px #f09, 0 0 20px #f09, 0 0 30px #f09, 0 0 40px #f09;
+    }
+    100% {
+        text-shadow: 0 0 5px #f09, 0 0 10px #f09, 0 0 15px #f09, 0 0 20px #f09;
+    }
+}
+.button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 31%;
+}
+button a{
+    text-decoration: none;
+    color: #fff;
+}
+button {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    padding: 5px 20px;
+    background: #f09;
+    font-size: 20px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #f09;
+    border-radius: 20px;
+    box-shadow: 0 0 0 #c458af8c;
+    transition: all .3s ease-in-out;
+} 
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 rgb(244, 155, 208));
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #f09);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #f09);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #f09);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #f09);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #f09);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  button:hover {
+    background: pink;
+    color: #fff;
+    box-shadow: 0 0 25px #fec1958c;
+    cursor: pointer;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #f09);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #f09
+  }
+  /* @media (max-width:550px){
+    .button{
+        margin-top: 90%;
+    }
+}
+  @media (max-width:420px){
+    .button{
+        margin-top: 150%;
+    }
+}
+  @media (max-width:300px){
+    .button{
+        margin-top: 110%;
+    } 
+}*/
+
